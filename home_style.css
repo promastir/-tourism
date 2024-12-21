@@ -1,0 +1,419 @@
+
+
+ 
+h2{
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+}
+
+        .parent {
+
+            margin-top: 70px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+
+            border-radius: 10px;
+            border: 20px;
+
+    
+        }
+
+
+        .parent div {
+            text-align: center;
+            width: 200px;
+        }
+
+        .parent img {
+            height: 150px;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .self {
+            align-self: flex-end;
+            order: 0;
+        }
+
+        .self0 {
+            align-self: flex-start;
+            order: 0;
+        }
+
+
+
+/**/
+
+
+
+
+
+.container{
+
+    display: inline-flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    height: 30px;
+
+
+}
+
+
+
+.header{
+    
+    display: inline-flex;
+
+    justify-content: space-between;
+    
+    justify-items: center;
+    align-items: center;
+
+    position: fixed;
+
+    top: 0;
+
+    z-index: 1;
+
+    width: 100%;
+
+    background-color: aliceblue;
+
+    
+    height: 90px;
+
+
+}
+
+
+
+
+.header h5{
+
+    display:flex;
+    font-size: 25px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-content: center;
+    padding: 20px;
+
+    padding-top: 0px;
+}
+
+.header nav{
+
+    display: inline-flex;
+ align-content: center;
+ 
+
+margin-right: 30px;
+
+ padding: 10px;
+
+}
+
+.header nav a{
+
+   padding: 10px ;
+
+   margin: 20px;
+
+
+    
+    color: aliceblue;
+
+    background-color: blue;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+}
+
+
+
+.header nav a:hover{
+
+    color: blue;
+    background-color: aliceblue;
+    border: 10px;
+    border-radius: 20px;
+    border-color: blue;
+
+
+}
+
+
+
+
+
+
+
+/**/
+
+
+
+.img{
+
+    display: flex;
+    width:100% ;
+
+    height: 900px;
+
+
+    background-image: url("images/ابراج.jpg");
+
+    
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    margin-top: 30px;
+
+    opacity: 0.9;
+}
+
+.img div{
+
+    display: flex;
+         /* لو عاوز تخلي طبقات بين الصورة و العنواة لازن تعمل  absolote  لل  parent */
+      
+    height: 450px;
+    width:900px ;
+    border-radius: 30px;
+
+    margin: auto;
+    
+    background-color: rgb(234, 246, 242);
+
+    opacity: 0.85;
+
+    
+}
+
+.img div h1{
+    display: flex;
+    
+     align-self: center;
+
+     justify-items: center;     
+
+    padding-left: 15px;
+
+    font-size: 90px;
+
+    animation: changecolor 4s normal;
+
+    
+    }
+
+    .img div p{
+        text-align: left;
+
+        align-items: center;
+        width: 300px;
+        margin: auto;
+
+        font-size: 25px;
+      
+        letter-spacing: 1px;
+    
+    }
+ 
+
+    footer{
+        height: 300px;
+        width: 100%;
+
+    }
+
+     
+
+
+    .img i{
+        font-size: 70px;
+        
+    }
+
+
+
+    .i{
+        
+  display: flex; 
+    align-items: center; 
+
+    justify-content: center; 
+
+    gap: 10px; /
+
+
+    }
+
+    .i h2 {
+    font-size: 40px;
+    animation: move 3s infinite; 
+}
+
+ 
+
+
+
+@keyframes changecolor {
+    0%{
+       color: azure;
+    }
+    23%{
+        color: rgb(239, 245, 252);
+    }
+    40%{
+        color: rgb(194, 129, 31);
+
+    }
+    85%{
+        color: rgb(134, 85, 11);
+    }
+    100%{
+        color: black;
+    }
+}
+
+
+
+
+
+@keyframes move {
+    0% {
+        transform: translateX(0); 
+    }
+    25% {
+        transform: translateX(50px); 
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+
+
+
+
+
+
+
+ .footer{
+    
+    background-color: #222; 
+    color: #fff; 
+    
+    padding: 20px 0; 
+    
+    text-align: center;
+
+    height: 250px;
+
+    margin-top: 150px;
+ }
+
+
+
+
+ .F_div {
+
+    max-width: 1200px; 
+    
+    margin: auto; 
+    
+    display: flex;
+    
+    
+    flex-wrap: wrap; 
+    justify-content: space-around;
+ }
+
+ 
+ .footer div a{
+
+    margin: 0 10px; 
+    text-decoration: none; 
+    
+    color: #ddd;
+ }
+
+
+
+
+ .section{
+
+    width: 100%;
+
+    margin-top: 100px;
+
+
+    height: 700px;
+
+    border: #222;
+    border: 20px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+ }
+
+
+
+
+.card{
+
+    width: 400px;
+    padding: 30px;
+    transition: 0.4s;
+
+    margin: 20px;
+
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 10px;
+    color: white;
+}
+
+.card:hover{
+    
+    transform: scale(1.1);
+}
+
+
+
+
+.card1{
+    
+    background-image: url('images/متحف.jpg');
+    
+}
+
+.card2{
+    
+    background-image: url('images/اهرامات.jpg');
+    
+}
+.card3{
+    
+    background-image: url("images/اهرامات2.jpg");
+    
+}
+
